@@ -8,6 +8,7 @@ body {
     align-items: center;
     text-align: center;
     min-height: 100vh;
+    background-color: black;
 }
 
 h1 {
@@ -40,5 +41,15 @@ h1 {
 .outline {
     color:  #e23ccf;
     -webkit-text-stroke-width: 0.03em;
-    -webkit-text-stroke-color: #4dd8fd
+    -webkit-text-stroke-color: #4dd8fd;
+    animation: glow 3s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 100px #fff, 0 0 200px #fff, 0 0 300px #e23ccf, 0 0 400px #e23ccf, 0 0 500px #e23ccf, 0 0 600px #e23ccf, 0 0 200px #e23ccf;
+  }
+  to {
+    text-shadow: 0 0 200px #fff, 0 0 300px #4dd8fd, 0 0 400px #4dd8fd, 0 0 500px #4dd8fd, 0 0 600px #4dd8fd, 0 0 700px #4dd8fd, 0 0 200px #4dd8fd;
+  }
 }
