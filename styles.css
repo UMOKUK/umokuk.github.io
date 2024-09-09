@@ -9,6 +9,7 @@ body {
     text-align: center;
     min-height: 100vh;
     background-color: black;
+    overflow: hidden;
 }
 
 h1 {
@@ -18,23 +19,27 @@ h1 {
 
 .umok {
     width: auto;
+    animation: glow 3s ease-in-out infinite alternate;
+    padding-left: 1em;
+    padding-right: 1em;
 }
 
 .umok h2 {
     font-size: 5em;
     margin-top: -1em;
     margin-bottom: 0;
-    padding-left: 2em;
+    padding-left: 1em;
 }
 
 .um {
     margin: 0;
+    padding-right: 0.05em;
 }
 
 .ok {
     margin-top: -0.59em;
     margin-bottom: 0;
-    padding-left: 0.21em;
+    padding-left: 0.16em;
     letter-spacing: -0.12em;
 }
 
@@ -42,14 +47,33 @@ h1 {
     color:  #e23ccf;
     -webkit-text-stroke-width: 0.03em;
     -webkit-text-stroke-color: #4dd8fd;
-    animation: glow 3s ease-in-out infinite alternate;
+}
+
+.songBar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
 }
 
 @-webkit-keyframes glow {
   from {
-    text-shadow: 0 0 100px #fff, 0 0 200px #fff, 0 0 300px #e23ccf, 0 0 400px #e23ccf, 0 0 500px #e23ccf, 0 0 600px #e23ccf, 0 0 200px #e23ccf;
+    box-shadow:
+        0 0 10px #4dd8fd,
+        0 0 20px #4dd8fd,
+        0 0 50px #e23ccf,
+        0 0 80px #e23ccf,
+        0 0 200px #e23ccf;
+    text-shadow:
+        0 0 20px #000000,
+        0 0 20px #000000;
   }
   to {
-    text-shadow: 0 0 200px #fff, 0 0 300px #4dd8fd, 0 0 400px #4dd8fd, 0 0 500px #4dd8fd, 0 0 600px #4dd8fd, 0 0 700px #4dd8fd, 0 0 200px #4dd8fd;
+    text-shadow:
+        0 0 30px #4dd8fd,
+        0 0 20px #4dd8fd,
+        0 0 20px #e23ccf,
+        0 0 80px #e23ccf,
+        0 0 150px #e23ccf
   }
 }
