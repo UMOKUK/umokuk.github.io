@@ -1,0 +1,83 @@
+
+$c-neon-pink: #e23ccf;
+$c-neon-blue: #4dd8fd;
+
+$d-header-height: 200px;
+
+body {
+    font-family: 'Georgia, 'Times New Roman', Times, serif';
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    min-height: 100vh;
+    background-color: $c-neon-blue;
+}
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: $d-header-height;
+    align-items: center;
+    // animation: glow 3s ease-in-out infinite alternate;
+    display: flex;
+    background-color: $c-neon-pink;
+}
+
+.header a {
+    font-size: 4em;
+    padding-right: 1em;
+}
+
+.umok {
+    padding: 20px;
+}
+
+.content {
+    width: 50%;
+    margin-top: $d-header-height;
+}
+
+@media only screen and (max-width: 1000px) {
+    .content {
+        width: 100%;
+        margin-top: $d-header-height;
+    }
+}
+
+.section {
+    width: 100%;
+    background-color: #e23ccf2d;
+}
+
+.section h1{
+    background-color: rgba(255, 255, 255, 0.288);
+}
+
+.section p {
+    padding: 3%;
+}
+
+@-webkit-keyframes glow {
+  from {
+    box-shadow:
+        0 0 10px #4dd8fd,
+        0 0 20px #4dd8fd,
+        0 0 50px #e23ccf,
+        0 0 80px #e23ccf,
+        0 0 200px #e23ccf;
+    text-shadow:
+        0 0 20px #000000,
+        0 0 20px #000000;
+  }
+  to {
+    text-shadow:
+        0 0 30px #4dd8fd,
+        0 0 20px #4dd8fd,
+        0 0 20px #e23ccf,
+        0 0 80px #e23ccf,
+        0 0 150px #e23ccf
+  }
+}
