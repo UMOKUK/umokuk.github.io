@@ -1,0 +1,28 @@
+$c-neon-pink: #e23ccf;
+$c-neon-blue: #4dd8fd;
+
+body {
+  /* background-image: url('images/groupPhoto.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: 70%; */
+  background-image: linear-gradient(45deg, $c-neon-pink, $c-neon-blue);
+  font-family: 'Serif';
+  color: white;
+  font-size: 2em;
+}
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.umok {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5em;
+  padding: 1em;
+}
